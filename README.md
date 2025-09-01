@@ -53,7 +53,7 @@ The dataset used is `Churn_Modelling.csv`, which contains information about bank
 ---
 
 ## 📊 Results
-- Achieved test accuracy of around **X%** (update with your best score).
+- Achieved test accuracy of around **86%** (update with your best score).
 - Best hyperparameters: *(update with GridSearch results)*.
 
 ---
