@@ -2,15 +2,15 @@
 
 # 🧠 Customer Churn Prediction using ANN
 
-## 📌 Project Overview
+# 📌 Project Overview
 This project predicts whether a customer will churn (leave the bank) using an **Artificial Neural Network (ANN)** built with **Keras** and optimized with **GridSearchCV**.  
 The dataset used is `Churn_Modelling.csv`, which contains information about bank customers.
 
 ---
 
-## ⚙️ Steps Followed
+# ⚙️ Steps Followed
 
-### 1. Data Preprocessing
+## 1. Data Preprocessing
 - Imported dataset (`Churn_Modelling.csv`)
 - Selected features (`X`) and target (`y`)
 - Converted categorical variables (`Geography`, `Gender`) into dummy variables
@@ -18,7 +18,7 @@ The dataset used is `Churn_Modelling.csv`, which contains information about bank
 - Split data into training (80%) and testing (20%)
 - Applied feature scaling using **StandardScaler**
 
-### 2. Building the ANN
+## 2. Building the ANN
 - Initialized ANN with **Keras Sequential API**
 - Added:
   - Input layer + 1st hidden layer (ReLU, He Uniform init)
@@ -29,12 +29,12 @@ The dataset used is `Churn_Modelling.csv`, which contains information about bank
   - Loss function: `binary_crossentropy`
   - Metrics: `accuracy`
 
-### 3. Training
+## 3. Training
 - Trained model on training set
 - Used `validation_split` for validation during training
 - Plotted accuracy & loss curves for monitoring
 
-### 4. Evaluation
+## 4. Evaluation
 - Predictions on test set
 - Converted probabilities → binary (threshold = 0.5)
 - Evaluated performance with:
@@ -42,7 +42,7 @@ The dataset used is `Churn_Modelling.csv`, which contains information about bank
   - Confusion Matrix
   - Classification Report
 
-### 5. Hyperparameter Tuning
+## 5. Hyperparameter Tuning
 - Wrapped ANN using **SciKeras KerasClassifier**
 - Applied **GridSearchCV** with:
   - Optimizers: `adam`, `rmsprop`, `adamax`
@@ -52,13 +52,13 @@ The dataset used is `Churn_Modelling.csv`, which contains information about bank
 
 ---
 
-## 📊 Results
+# 📊 Results
 - Achieved test accuracy of around **86%** (update with your best score).
 - Best hyperparameters: *(update with GridSearch results)*.
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Technologies Used
 - Python 3.12
 - NumPy, Pandas, Matplotlib, Seaborn
 - Scikit-learn
